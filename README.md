@@ -13,6 +13,8 @@ Lovable (design & code) → GitHub (source of truth) → Webflow (publish)
 3. A **GitHub Action** bundles and pushes the component library to your Webflow workspace on demand
 4. In Webflow Designer, drag the components onto pages and configure props visually
 
+Note: Lovable-generated components live in a private Webflow Library, which can be accessed from the site builder. Therefore, this workflow does not affect any content designed in Webflow itself and maintains a separation of concerns in that sense.
+
 ## Quick start
 
 ### 1. Create a GitHub org, Lovable project, and push the starter kit
