@@ -1,0 +1,10 @@
+{
+  "library": {
+    "name": "Landing Components",
+    "components": [
+      "./src/**/*.webflow.@(js|jsx|mjs|ts|tsx)"
+    ],
+    "globals": "./src/globals.webflow.ts",
+    "description": "Webflow-compatible components designed with Lovable"
+  }
+}

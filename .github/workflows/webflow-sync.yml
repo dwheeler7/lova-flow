@@ -1,0 +1,27 @@
+name: Sync to Webflow
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches: [main]
+    paths:
+      - '.webflow-sync-trigger'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Share library to Webflow
+        run: npm run webflow:share -- --no-input
+        env:
+          WEBFLOW_WORKSPACE_API_TOKEN: ${{ secrets.WEBFLOW_WORKSPACE_API_TOKEN }}
