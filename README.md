@@ -30,7 +30,12 @@ Lovable also can't import an existing repo — you have to create a project firs
 
 **Set up Lovable:**
 
-3. Go to [lovable.dev](https://lovable.dev) → **New Project** → create any project (the initial code doesn't matter, it will be replaced)
+3. Go to [lovable.dev](https://lovable.dev) → **New Project** → create any project (the initial code doesn't matter, it will be replaced). For exmaple, use this prompt:
+
+```sh
+A completely clean, empty single-page application — just a bare HTML shell with no visible content, ready for you to merge your GitHub repo on top of.
+```
+
 4. In your Lovable project, go to **Settings** → **GitHub** → **Connect**
 5. When prompted, authorize Lovable for **only your new organization** (not your personal account)
 6. Create a new repo inside that org (e.g. `my-project-webflow/my-site`)
