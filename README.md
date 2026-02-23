@@ -36,31 +36,23 @@ Lovable also can't import an existing repo — you have to create a project firs
 A completely clean, empty single-page application — just a bare HTML shell with no visible content, ready for you to merge your GitHub repo on top of.
 ```
 
-4. In your Lovable project, go to **Settings** → **GitHub** → **Connect**
-5. When prompted, authorize Lovable for **only your new organization** (not your personal account)
-6. Create a new repo inside that org (e.g. `my-project-webflow/my-site`)
+4. When it's done building, edit your project name in settings.
+5. In your Lovable project, go to **Settings** → **GitHub** → **Connect**
+6. When prompted, authorize Lovable for **only your new organization** (not your personal account)
+7. Lovable will create a new repo in your GitHub organization
 
-**Push the starter kit:**
+**Replace that repo with the starter kit:**
+
+Navigate via your terminal to wherever you organize repositories. If you don't have a folder already, create one (eg ~/apps) and navigate to it. Then clone this starter kit:
 
 ```sh
-# Clone this starter kit
 git clone https://github.com/dwheeler7/lova-flow.git
 cd lova-flow
-
-# Point it at your new Lovable-connected repo and push
-git remote set-url origin https://github.com/YOUR_ORG/YOUR_REPO.git
-git push --force origin main
-
-# Install dependencies for local dev
-npm install
-npm run dev
 ```
-
-Lovable will pick up the pushed code on its next sync. You now have bi-directional sync: edits in Lovable push to GitHub, and local pushes show up in Lovable.
 
 **Name your component library:**
 
-Open `webflow.json` and change the library name to match your project:
+Open `webflow.json` in your text editor and change the library name to match your project:
 
 ```json
 {
@@ -72,6 +64,19 @@ Open `webflow.json` and change the library name to match your project:
 ```
 
 This name appears in the Webflow Designer's Code Components panel.
+
+**Push everything to your Lovable repo:**
+
+```sh
+git add -A && git commit -m "initiate project"
+git remote set-url origin https://github.com/YOUR_ORG/YOUR_REPO.git
+git push --force origin main
+npm install
+```
+
+Lovable will pick up the pushed code on its next sync. You now have bi-directional sync: edits in Lovable push to GitHub, and local pushes show up in Lovable.
+
+Back in Lovable, you should see your project with a new design!
 
 ### 2. Add Lovable Knowledge entries
 
