@@ -1,6 +1,6 @@
 {
   "library": {
-    "name": "Landing Components",
+    "name": "CHANGE ME",
     "components": [
       "./src/**/*.webflow.@(js|jsx|mjs|ts|tsx)"
     ],
