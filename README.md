@@ -57,7 +57,7 @@ Open `webflow.json` in your text editor and change the library name to match you
 ```json
 {
   "library": {
-    "name": "My Project Components",
+    "name": "My Project",
     ...
   }
 }
@@ -100,7 +100,7 @@ Open your Lovable project → Settings → Knowledge. Paste the content from [`d
 4. Value: paste your Webflow token
 5. Click **Add secret**
 
-**Add the token locally (optional, for `npm run webflow:share`):**
+**Add the token locally  (for `npm run webflow:share`):**
 
 Create a `.env` file in the project root:
 ```
@@ -108,15 +108,15 @@ WEBFLOW_WORKSPACE_API_TOKEN=your_token_here
 ```
 This file is already gitignored.
 
-### 4. Push components to Webflow
+### 4. Create your Webflow component library
 
-There are three ways to sync:
+Run the share command from your local repository:
 
-| Method | How |
-|--------|-----|
-| **From Lovable** | Tell Lovable: *"sync to Webflow"* — it updates `.webflow-sync-trigger`, which fires the GitHub Action |
-| **From GitHub** | Actions tab → "Sync to Webflow" → Run workflow |
-| **Locally** | `npm run webflow:share` |
+```sh
+npm run webflow:share
+```
+
+It will prompt you to select a workspace, then write an id into webflow.json. After that, commit and push the updated webflow.json.
 
 ### 5. Use components in Webflow Designer
 
