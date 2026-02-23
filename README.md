@@ -80,9 +80,7 @@ Back in Lovable, you should see your project with a new design!
 
 ### 2. Add Lovable Knowledge entries
 
-Open your Lovable project → Settings → Knowledge. Create one entry for each section in [`docs/LOVABLE_WEBFLOW_GUIDELINES.md`](docs/LOVABLE_WEBFLOW_GUIDELINES.md). These entries teach Lovable to generate Webflow-compatible components automatically.
-
-There are 7 entries covering architecture, forbidden patterns, component rules, animations, wrapper templates, deployment, and a pre-completion checklist.
+Open your Lovable project → Settings → Knowledge. Paste the content from [`docs/LOVABLE_WEBFLOW_GUIDELINES.md`](docs/LOVABLE_WEBFLOW_GUIDELINES.md). This gives Lovable directions to generate Webflow-compatible components automatically.
 
 ### 3. Set up Webflow
 
