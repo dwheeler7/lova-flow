@@ -118,6 +118,12 @@ npm run webflow:share
 
 It will prompt you to select a workspace, then write an id into webflow.json. After that, commit and push the updated webflow.json.
 
+Once this is complete, you must replace the "globals" URL in the webflow.json file to this:
+
+```sh
+"globals": "./src/globals.webflow.ts",
+```
+
 ### 5. Use components in Webflow Designer
 
 1. Open your site in the Webflow Designer
