@@ -74,7 +74,7 @@ git push --force origin main
 npm install
 ```
 
-Lovable will pick up the pushed code on its next sync. You now have bi-directional sync: edits in Lovable push to GitHub, and local pushes show up in Lovable.
+After a few minutes, Lovable will pick up the pushed code. You now have bi-directional sync: edits in Lovable push to GitHub, and local pushes show up in Lovable.
 
 Back in Lovable, you should see your project with a new design!
 
