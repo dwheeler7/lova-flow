@@ -123,6 +123,11 @@ Once this is complete, you must replace the "globals" URL in the webflow.json fi
 ```sh
 "globals": "./src/globals.webflow.ts",
 ```
+Next, push these changes to GitHub (and Lovable):
+
+```sh
+git add -A && git commit -m "globals" && git push
+```
 
 ### 5. Use components in Webflow Designer
 
